@@ -6,7 +6,7 @@
 <body>
 
     <th:block th:fragment="content">
-    <div id="container">
+    <div class="container mt-5">
         <div th:if="${param.error}">
             Invalid username and password.
         </div>
@@ -14,13 +14,18 @@
             You have been logged out.
         </div>
 
-        <div id="mx-auto">
-            <form th:action="@{/login}" method="post">
-                <div><label> User name : <input type="text" name="username"/> </label></div>
-                <div><label> Password: <input type="password" name="password"/> </label></div>
-                <div><input type="submit" value="Sign In"/></div>
-            </form>
-        </div>
+        <form th:action="@{/login}" method="post">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">User name:</label>
+                <div class="col-sm-4"><input type="text" name="username"/></div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-4"><input type="password" name="password"/></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Sign In</button>
+        </form>
+
     </div>
     </th:block>
 
