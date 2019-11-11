@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{layout/layout :: layout(~{::title}, ~{::content}, ~{})}">
+<head>
+    <title>Hello World!</title>
+</head>
+<body>
+    <th:block th:fragment="content">
+
+    <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+
+    </th:block>
+</body>
+</html>

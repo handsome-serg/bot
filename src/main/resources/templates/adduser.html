@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{layout/layout :: layout(~{::title}, ~{::content}, ~{})}">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+</head>
+<body>
+    <th:block th:fragment="content">
+    <div>
+        <form method="post">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="email" />
+            <button type="submit">Add user</button>
+        </form>
+    </div>
+    <div>
+        <form method="post" action="/user/filter">
+            <input type="text" name="filter" placeholder="find by name" />
+            <button type="submit">Find</button>
+        </form>
+    </div>
+    <div>
+        <p th:text="${result}" />
+    </div>
+    <div><a href="/user/all">Show all users</a></div>
+
+    </th:block>
+</body>
+</html>

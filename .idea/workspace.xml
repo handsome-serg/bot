@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bot:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="62dc40b5-b4c3-4b6b-a03f-aced7669bcca" name="Default Changelist" comment="" />
+    <list default="true" id="62dc40b5-b4c3-4b6b-a03f-aced7669bcca" name="Default Changelist" comment="actual release with scheduled fetch data from Bittrex API, store to MySQL related tables with Hibernate, MVC web interface with Thymeleaf and chart on JavaScript with auto update. Data source for charts fetched from MySQL and delivered with JSON.">
+      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/Bittrex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/CoinMarketCup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/api/ChartRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/bittrex/api/ResponseGetMarkets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/bittrex/api/ResponseGetSummaries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/config/ScheduleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/controller/ApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/unused.index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/filteruser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/handsome/CoinMarketCupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/handsome/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/handsome/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/handsome/ApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/handsome/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/handsome/AppTest.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,29 +59,123 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
+  <component name="FavoritesManager">
+    <favorites_list name="bot" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/App.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="357">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummaryRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#171#172#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/adduser.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/filteruser.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spring-boot-starter-security</find>
+      <find>args</find>
+      <find>vaadin</find>
+      <find>schedu</find>
+      <find>sch</find>
+      <find>ap</find>
+      <find>timestamp</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,15 +183,108 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/GreetingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/App.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/handsome/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/config/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/base.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layoutl.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/header.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/adduser.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/filteruser.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/hello.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/MainView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/CustomerEditor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/handsome/CoinMarketCupTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/CoinMarketCup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/CustomerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/Bittrex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/bittrex/api/ResponseGetSummaries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/bittrex/api/ResponseGetMarkets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/api/ChartRestController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/scripts/deploy.sh" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/handsome/repository/MarketRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketDeserializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/config/ScheduleConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/controller/MarketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummaryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/controller/ApiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-2" />
-    <option name="y" value="46" />
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="junit:junit:4.11" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="71" />
     <option name="width" value="1374" />
     <option name="height" value="748" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -57,6 +292,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -67,6 +303,11 @@
             <path>
               <item name="bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="bot" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -87,17 +328,32 @@
               <item name="bot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="bot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="handsome" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bot" type="b2602c69:ProjectViewProjectNode" />
@@ -118,29 +374,50 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="handsome" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.handsome.repository" />
+      <recent name="com.handsome" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey\Documents\GitHub\bot\src\main\resources\templates\layout" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey\Documents\GitHub\bot\src\main\resources" />
+      <recent name="C:\Users\Sergey\Documents\GitHub\bot\src\main\resources\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,13 +431,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.handsome.App" />
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.handsome.Application" />
       <module name="bot" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=dev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.handsome.*" />
+          <option name="PATTERN" value="com.handsome.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,28 +446,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.handsome.*" />
+          <option name="PATTERN" value="com.handsome.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.handsome" />
-      <option name="MAIN_CLASS_NAME" value="com.handsome.AppTest" />
+      <option name="MAIN_CLASS_NAME" value="com.handsome.ApplicationTest" />
       <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CoinMarketCupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.handsome.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.handsome" />
+      <option name="MAIN_CLASS_NAME" value="com.handsome.CoinMarketCupTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarketRepositoryTest.findFirstByMarketName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.handsome.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.handsome.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.handsome.repository.MarketRepositoryTest" />
+      <option name="METHOD_NAME" value="findFirstByMarketName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.handsome.Application" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=dev" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="JUnit.ApplicationTest.shouldAnswerWithTrue" />
+      <item itemvalue="JUnit.CoinMarketCupTest" />
+      <item itemvalue="JUnit.MarketRepositoryTest.findFirstByMarketName" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.MarketRepositoryTest.findFirstByMarketName" />
+        <item itemvalue="JUnit.CoinMarketCupTest" />
+        <item itemvalue="JUnit.ApplicationTest.shouldAnswerWithTrue" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showModules" value="false" />
+    <option name="showImplicitBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -201,62 +533,675 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565295295606</updated>
-      <workItem from="1565295303207" duration="249000" />
+      <workItem from="1565295303207" duration="4588000" />
+      <workItem from="1565300210444" duration="1820000" />
+      <workItem from="1565372506558" duration="5092000" />
+      <workItem from="1565424015248" duration="14260000" />
+      <workItem from="1566726774855" duration="2526000" />
+      <workItem from="1569788149434" duration="20482000" />
+      <workItem from="1569966357543" duration="2502000" />
+      <workItem from="1570302254694" duration="10304000" />
+      <workItem from="1570554773082" duration="1130000" />
+      <workItem from="1571224355450" duration="12998000" />
+      <workItem from="1571831126620" duration="44288000" />
+      <workItem from="1572511126089" duration="1619000" />
+      <workItem from="1572892812119" duration="35265000" />
+      <workItem from="1573208490022" duration="9012000" />
+      <workItem from="1573228888327" duration="25177000" />
+      <workItem from="1573459845845" duration="5545000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 17m 24s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 21m 32s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 27m 26s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 29m 49s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 38m 41s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 39m 34s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 46m 49s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinMarketCupTest - 2019.10.16 at 17h 47m 00s.xml">
+      <configuration name="CoinMarketCupTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarketRepositoryTest_findFirstByMarketName - 2019.11.06 at 00h 08m 33s.xml">
+      <configuration name="MarketRepositoryTest.findFirstByMarketName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarketRepositoryTest_findFirstByMarketName - 2019.11.06 at 00h 14m 05s.xml">
+      <configuration name="MarketRepositoryTest.findFirstByMarketName" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249000" />
+    <option name="totallyTimeSpent" value="196608000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7513398" visible="true" weight="0.21695095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.24866024" side_tool="true" weight="0.21108742" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49946696" weight="0.39978564" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.63113004" weight="0.2818864" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.36886993" side_tool="true" weight="0.2636656" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.32583067" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3290461" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.116204694" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Preview" order="10" weight="0.08422175" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7513398" visible="true" weight="0.21321961" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.24866024" side_tool="true" weight="0.21108742" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.49946696" weight="0.39978564" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.63113004" visible="true" weight="0.2818864" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.36886993" side_tool="true" weight="0.2636656" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.32583067" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3290461" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3290461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.116204694" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Preview" order="10" weight="0.08422175" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="actual release with scheduled fetch data from Bittrex API, store to MySQL related tables with Hibernate, MVC web interface with Thymeleaf and chart on JavaScript with auto update. Data source for charts fetched from MySQL and delivered with JSON." />
+    <option name="LAST_COMMIT_MESSAGE" value="actual release with scheduled fetch data from Bittrex API, store to MySQL related tables with Hibernate, MVC web interface with Thymeleaf and chart on JavaScript with auto update. Data source for charts fetched from MySQL and delivered with JSON." />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)jsonNode)._children).entrySet().toArray()[2]).getValue()" custom="com.fasterxml.jackson.databind.node.ObjectNode,java.util.LinkedHashMap,java.util.LinkedHashMap.Entry" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/App.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar!/org/hibernate/annotations/IndexColumn.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="391">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#0#581#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final-sources.jar!/org/hibernate/annotations/IndexColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#1191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final-sources.jar!/org/hibernate/cfg/JPAIndexHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/Index.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.9.RELEASE/spring-data-commons-2.1.9.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/GeneratedValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/unused.index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/Bittrex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/GreetingController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="198" column="32" selection-start-line="198" selection-start-column="32" selection-end-line="198" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/authority/SimpleGrantedAuthority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar!/org/springframework/security/core/userdetails/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="439" column="50" selection-start-line="439" selection-start-column="50" selection-end-line="439" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/GetMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ResponseBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#1400#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.6.RELEASE/spring-boot-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="250" column="44" selection-start-line="250" selection-start-column="44" selection-end-line="250" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/config/ScheduleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1266">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="261" column="41" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
+          <folding>
+            <element signature="e#4191#4192#0" expanded="true" />
+            <element signature="e#4267#4268#0" expanded="true" />
+            <element signature="e#10512#10513#0" expanded="true" />
+            <element signature="e#10558#10559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE.jar!/org/springframework/security/web/util/matcher/AntPathRequestMatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="71" />
+          <folding>
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="135" column="16" lean-forward="true" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="2939" column="34" lean-forward="true" selection-start-line="2939" selection-start-column="34" selection-end-line="2939" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="2453" column="21" selection-start-line="2453" selection-start-column="21" selection-end-line="2453" selection-end-column="21" />
+          <folding>
+            <element signature="e#101735#101736#0" expanded="true" />
+            <element signature="e#101781#101782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Locale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="708" column="44" selection-start-line="708" selection-start-column="44" selection-end-line="708" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/util/locale/BaseLocale.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/CustomerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/controller/ApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/adduser.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/filteruser.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummaryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|bot</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="com.github.eirslett:frontend-maven-plugin:1.7.6:install-node-and-npm -DnodeVersion=&quot;v10.16.0&quot;" />
   </component>
 </project>

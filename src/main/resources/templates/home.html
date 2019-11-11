@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{layout/layout :: layout(~{::title}, ~{::content}, ~{::links})}">
+<head>
+
+    <title>Home page</title>
+
+    <th:block th:fragment="links">
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    </th:block>
+
+</head>>
+
+</head>
+<body>
+
+    <div th:fragment="content" class="container">
+
+        <div id="chartcontainer" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+        <script>
+
+            var chartDataUrl = window.location.origin + '/api/chart/market/USD-BTC/50';
+
+            Highcharts.chart('chartcontainer', {
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'USD-BTC'
+                },
+
+                subtitle: {
+                    text: 'live market data'
+                },
+
+                data: {
+                    rowsURL: chartDataUrl,
+                    firstRowAsNames: true,
+                    enablePolling: true,
+                    dataRefreshRate : 5
+                }
+            });
+        </script>
+
+        <div class="d-flex align-content-start flex-wrap">
+            <div th:each="market : ${marketList}" class="p-2">
+                <a th:href="${'/api/chart/market/' + market.marketName} + '/50'">
+                    <img th:src="${market.logoUrl}" th:alt="${market.marketName}" class="img-thumbnail" width="80px" height="80px">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
