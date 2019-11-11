@@ -6,50 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62dc40b5-b4c3-4b6b-a03f-aced7669bcca" name="Default Changelist" comment="actual release with scheduled fetch data from Bittrex API, store to MySQL related tables with Hibernate, MVC web interface with Thymeleaf and chart on JavaScript with auto update. Data source for charts fetched from MySQL and delivered with JSON.">
-      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/Bittrex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/CoinMarketCup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/api/ChartRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/bittrex/api/ResponseGetMarkets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/bittrex/api/ResponseGetSummaries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/config/ScheduleConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/controller/ApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/MarketSummaryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/handsome/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/unused.index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/filteruser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/handsome/CoinMarketCupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/handsome/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/handsome/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/handsome/ApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/handsome/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/handsome/AppTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="62dc40b5-b4c3-4b6b-a03f-aced7669bcca" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -548,8 +505,16 @@
       <workItem from="1572892812119" duration="35265000" />
       <workItem from="1573208490022" duration="9012000" />
       <workItem from="1573228888327" duration="25177000" />
-      <workItem from="1573459845845" duration="5545000" />
+      <workItem from="1573459845845" duration="5801000" />
     </task>
+    <task id="LOCAL-00001" summary="actual release with scheduled fetch data from Bittrex API, store to MySQL related tables with Hibernate, MVC web interface with Thymeleaf and chart on JavaScript with auto update. Data source for charts fetched from MySQL and delivered with JSON.">
+      <created>1573498931862</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573498931862</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -585,7 +550,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196608000" />
+    <option name="totallyTimeSpent" value="196864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,7 +563,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7513398" visible="true" weight="0.21695095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -622,7 +586,7 @@
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.32583067" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32690248" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1119,8 +1083,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/handsome/repository/Market.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        <state relative-caret-position="90">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

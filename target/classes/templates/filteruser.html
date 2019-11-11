@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{layout/layout :: layout(~{::title}, ~{::content}, ~{})}">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+</head>
+<body>
+    <th:block th:fragment="content">
+    <div>
+        <p th:text="'Search result for filter &quot' + ${filter} + '&quot is '" />
+        <table>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.getId()}"></td>
+                <td th:text="${user.getName()}"></td>
+                <td th:text="${user.getEmail()}"></td>
+            </tr>
+        </table>
+    </div>
+    <div><a href="/user/all">Show all users</a></div>
+
+    </th:block>
+
+</body>
+</html>
