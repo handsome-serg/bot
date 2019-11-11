@@ -1,10 +1,12 @@
-C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\GreetingController.java
+C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\controller\MainController.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\MarketDeserializer.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\UserRepository.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\MarketSummary.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\Application.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\bittrex\api\ResponseGetSummaries.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\Market.java
+C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\controller\ApiController.java
+C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\controller\UserController.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\CustomerRepository.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\User.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\Customer.java
@@ -14,7 +16,6 @@ C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\Marke
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\repository\MarketSummaryRepository.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\bittrex\api\ResponseGetMarkets.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\config\ScheduleConfig.java
-C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\MainController.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\api\ChartRestController.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\config\MvcConfig.java
 C:\Users\Sergey\Documents\GitHub\bot\src\main\java\com\handsome\config\WebSecurityConfig.java

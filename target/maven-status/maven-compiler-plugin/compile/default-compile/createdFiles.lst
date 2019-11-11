@@ -1,8 +1,7 @@
 com\handsome\config\WebSecurityConfig.class
 com\handsome\repository\Market.class
 com\handsome\repository\MarketSummary.class
-com\handsome\MainController.class
-com\handsome\GreetingController.class
+com\handsome\controller\MainController.class
 com\handsome\bittrex\api\ResponseGetSummaries.class
 com\handsome\repository\Customer.class
 com\handsome\repository\MarketSummaryRepository.class
@@ -11,6 +10,7 @@ com\handsome\repository\MarketRepository.class
 com\handsome\repository\User.class
 com\handsome\config\ScheduleConfig.class
 com\handsome\repository\CustomerRepository.class
+com\handsome\controller\UserController.class
 com\handsome\api\ChartRestController.class
 com\handsome\bittrex\api\ResponseGetMarkets.class
 com\handsome\Bittrex.class
@@ -18,3 +18,4 @@ com\handsome\Application.class
 com\handsome\config\MvcConfig.class
 com\handsome\repository\MarketDeserializer.class
 com\handsome\repository\UserRepository.class
+com\handsome\controller\ApiController.class
