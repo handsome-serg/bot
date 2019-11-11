@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.handsome.CoinMarketCupTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.925 s - in com.handsome.CoinMarketCupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.527 s - in com.handsome.CoinMarketCupTest
